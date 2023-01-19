@@ -1,23 +1,36 @@
 .home{
   height: 100%;
-  padding-top: 38vh;
+  padding-top: 14vh;
+  padding-right: 7%;
+  padding-left: 7%;
   overflow: hidden;
-  align-items: center;
-  text-align: center;
-  background: 
-    linear-gradient(
-      to left,
-      rgba($primary-color,0.5),
-      rgba($primary-color,0.1)
-    ),
-    url('../img/myimg.JPG') center; 
-  background-size: cover;
+  font-size: 1.2em;
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 215px;
+    transform: rotate(-30deg);
+    padding-bottom: 1rem;
+  }
+  
+  //align-items: left;
+  //text-align: left;
+  // img {
+  //   width: 410px;
+  //   position: absolute;
+  //   top: 23vh;
+  //   left: 62%;
+  //   transform: rotate(-30deg);
+  // }
+  
 
   &__name{
-    font-size: 4rem;
+    font-size: 3rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid set-text-color($primary-color);
+    border-bottom: 1.5px solid set-text-color($primary-color);
 
     &--last{
       color:$secondary-color;

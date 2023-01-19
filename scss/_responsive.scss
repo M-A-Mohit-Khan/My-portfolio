@@ -25,6 +25,45 @@
     }
   }
 
+  .home{
+    height: 100%;
+    padding-top: 35vh;
+    padding-right: 50%;
+    padding-left: 7%;
+    overflow: hidden;
+    font-size: 1.2em;
+
+    &__name{
+      font-size: 3.5rem;
+    }
+    
+    //align-items: left;
+    //text-align: left;
+    img {
+      width: 300px;
+      position: absolute;
+      top: 25vh;
+      left: 62%;
+      transform: rotate(-30deg);
+    }
+  }
+
+
+  .about{
+    img{
+      width: 250px;
+      
+    }
+  }
+
+  .contact{
+    img{
+      width: 250px;
+      padding-bottom: 1rem;
+    }
+  }
+
+  
   .about__bio{
     font-size:1.5rem;
   }
@@ -45,7 +84,44 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @include media-lg{
+  .home{
+    height: 100%;
+    padding-top: 35vh;
+    padding-right: 50%;
+    padding-left: 7%;
+    overflow: hidden;
+    font-size: 1.2em;
+
+    &__name{
+      font-size: 4rem;
+    }
+  
+    //align-items: left;
+    //text-align: left;
+    img {
+      width: 400px;
+      position: absolute;
+      top: 22vh;
+      left: 62%;
+      transform: rotate(-30deg);
+    }
+  }
+
+  .about{
+    img{
+      width: 275px;
+    }
+  }
+
+  .contact{
+    img{
+      width: 275px;
+      padding-bottom: 2rem;
+    }
+  }
+
   .projects{
     &__items{
       grid-template-columns: repeat(3, 1fr);
@@ -55,8 +131,10 @@
   .contact__list{
     grid-template-columns: repeat(3, 1fr);
   }
+  
 }
 
 @include media-xl{
+  
 
 }
